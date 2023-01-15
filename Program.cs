@@ -46,7 +46,20 @@ namespace dictimory
             {
                 System.Console.WriteLine(item.Value);
             }
-            
+
+            //Keys
+            System.Console.WriteLine("** Keys **");
+            foreach (var item in kullanicilar.Keys)
+            {
+                System.Console.WriteLine(item);
+            }
+
+            //Value
+            System.Console.WriteLine("** Value **");
+            foreach (var item in kullanicilar.Values)
+            {
+                System.Console.WriteLine(item);
+            }
 
 
         }   
