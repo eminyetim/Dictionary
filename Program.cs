@@ -14,6 +14,7 @@ namespace dictimory
             kullanicilar.Add(1001,"Ahmet Yilmaz");
             kullanicilar.Add(1002,"Ali Yilmaz");
             kullanicilar.Add(1003,"Veli Yilmaz");
+            kullanicilar.Add(1004,"Hüseyin Yilmaz");
 
             //Listing
 
@@ -37,6 +38,17 @@ namespace dictimory
             System.Console.WriteLine("** Contains **");
             System.Console.WriteLine(kullanicilar.ContainsKey(1003));
             System.Console.WriteLine(kullanicilar.ContainsValue("Hasan Yilmaz"));
+        
+            //Remove
+            System.Console.WriteLine("** Remove **");
+            kullanicilar.Remove(1004);
+            foreach (var item in kullanicilar)
+            {
+                System.Console.WriteLine(item.Value);
+            }
+            
+
+
         }   
     }
 }
