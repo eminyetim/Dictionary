@@ -17,6 +17,8 @@ namespace dictimory
 
             //Listing
 
+            System.Console.WriteLine("** Listing ***");
+
             System.Console.WriteLine("Key 1001 : " + kullanicilar[1001]);
 
             foreach (var item in kullanicilar)
@@ -26,8 +28,15 @@ namespace dictimory
 
             //Count
 
+            System.Console.WriteLine("** Count **");
+
             System.Console.WriteLine(kullanicilar.Count);
 
-        }
+
+            //Contains (is there ?)
+            System.Console.WriteLine("** Contains **");
+            System.Console.WriteLine(kullanicilar.ContainsKey(1003));
+            System.Console.WriteLine(kullanicilar.ContainsValue("Hasan Yilmaz"));
+        }   
     }
 }
