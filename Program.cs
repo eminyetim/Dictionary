@@ -24,6 +24,10 @@ namespace dictimory
                 System.Console.WriteLine(item);
             }
 
+            //Count
+
+            System.Console.WriteLine(kullanicilar.Count);
+
         }
     }
 }
